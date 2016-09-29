@@ -1,0 +1,151 @@
+Pink = #BA77FF
+Blue = #8C88FF
+Green = #50D2C2
+Purple = #6563A4
+White = #FFFFFF
+
+
+.app
+  height 100vh
+  display flex
+  flex-direction column
+  justify-content space-between
+
+.header
+  background Pink
+  display flex
+  justify-content space-between
+  align-items center
+  padding 1em
+  color White
+
+.content 
+  flex 1
+  display flex
+  flex-direction column
+  .cards-container
+    flex 1
+    display flex
+
+.progress-tracker
+  background Pink
+  display flex
+  justify-content space-between
+  align-items center
+  padding 1em
+  color White
+  .steps-container
+    padding 0 0.5em
+    display flex
+    align-items center
+    max-width 80vw
+    overflow scroll
+    .progress-step-outer
+      min-width 4em
+      height 3em
+      display flex
+      align-items center
+      position relative
+    .progress-line
+      flex 1
+    .progress-line-completed
+      color Green
+    .progress-active-circle
+      position absolute
+      border-radius 50%
+      width 2.3em
+      height 2.3em
+      display flex
+      align-items center
+      justify-content center
+      border 3px solid Green
+      left -0.42em
+    .progress-step
+      border 1px solid white
+      border-radius 50%
+      width 1.8em
+      height 1.8em
+      display flex
+      align-items center
+      justify-content center
+    .progress-step-completed
+      background Green
+      border none
+    .progress-step-active
+      border 3px solid Green
+
+.card-holder
+  flex 1
+  display flex
+  margin 1em 0
+  .active-card
+    width 70vw
+    flex 1
+    margin 0 1em
+    box-shadow: 1px 2px 3px 1px #d8d8d8;
+    position relative
+    .title-container
+      background Blue
+      color White
+      height 50%
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      .title
+        font-size 28px
+        font-weight 100
+      .status-icon-active
+        border-radius 50%
+        background Green
+    .button-container
+      margin-top 25%
+      display flex
+      justify-content center
+    .slanted-background
+      background Blue
+      height 20%
+      width 100%
+      transform skewY(-15deg)
+      margin-top -15%
+  .left-card, .right-card
+    width 10vw
+    box-shadow: 1px 2px 3px 1px #d8d8d8;
+    margin 1em 0
+
+.footer
+  display flex
+  justify-content space-between
+  background Blue
+  height 4em
+  .tab
+    display flex
+    justify-content center
+    align-items center
+    flex 1
+  .active-tab 
+    border-bottom 3px solid White
+
+
+.msp-button
+  height 3.5em
+  color White
+  display flex
+  .left-button-half
+    background Green
+    width 3em
+    margin-right -10px
+    border-top-left-radius 50%
+    border-bottom-left-radius 50%
+  .button-middle
+    background Green
+    width 6em
+    display flex
+    align-items center
+    justify-content center
+  .right-button-half
+    background Green
+    width 3em
+    margin-left -10px
+    border-top-right-radius 50%
+    border-bottom-right-radius 50%
